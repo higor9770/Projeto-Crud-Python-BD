@@ -596,7 +596,7 @@ class senac: #criação de classe
                     print(">>> ERRO <<<")
 
             elif escolha4 == 2:
-                # alterar Técnico Administrativo
+                # alterar o setor Técnico Administrativo
                 print("\nvamos alterar o setor do técnico administrativo!")
                 self.setor = input("\ndigite o novo setor: ")
                 self.id_tec_adminstrativo = int(input("\nconfime seu ID: "))
@@ -686,7 +686,6 @@ class senac: #criação de classe
                 
             else:
                 print("erro!")
-
             # Aluno
         elif escolha2 == 3:
             print("\nAqui vamos alterar um dado de curso:")
@@ -771,9 +770,9 @@ class senac: #criação de classe
                     self.menu()
                 else:
                     self.finalizar() # ir para a função de finalizar
-
+            # aluno
             elif escolha3 == 2:
-                # altera o nome do aluno
+                # altera a carga horária
                 self.carga_horaria = input("\nNova carga horária: ")
                 self.id_disciplina = int(input("\nconfirme o id da disciplina: "))
                 try:
@@ -802,7 +801,7 @@ class senac: #criação de classe
             print("erro!")
         
     def finalizar(self):
-        print(">>>>>>>> obriagdo por usar nosso código <<<<<<<<<<<")
+        print(">>>>>>>> OBRIGADO POR USAR NOSSO CÓDIGO <<<<<<<<<<<")
 
     def menu(self):
         print("\nEscolha uma das opções para acessá-la.")
